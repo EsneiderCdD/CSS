@@ -1,0 +1,60 @@
+.container {
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map {
+  position: relative;
+  width: 600px;
+  height: 600px;
+}
+
+.central {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Cuadro superior (pegado) */
+.link:nth-child(2) {
+  position: absolute;
+  top: calc(50% - 125px - 60px); /* 125 = mitad del central, 60 = mitad del pequeño */
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Cuadro izquierdo (pegado) */
+.link:nth-child(3) {
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 125px - 60px);
+  transform: translate(-50%, -50%);
+}
+
+/* Cuadro derecho (pegado) */
+.link:nth-child(4) {
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 125px + 60px);
+  transform: translate(-50%, -50%);
+}
+
+/* Cuadro inferior izquierdo (pegado) */
+.link:nth-child(5) {
+  position: absolute;
+  top: calc(50% + 125px + 60px);
+  left: calc(50% - 60px);
+  transform: translate(-50%, -50%);
+}
+
+/* Cuadro inferior derecho (pegado) */
+.link:nth-child(6) {
+  position: absolute;
+  top: calc(50% + 125px + 60px);
+  left: calc(50% + 60px);
+  transform: translate(-50%, -50%);
+}
